@@ -63,3 +63,7 @@ nnoremap <leader>7 :7tabnext<CR>
 nnoremap <leader>8 :8tabnext<CR>
 nnoremap <leader>9 :9tabnext<CR>
 nmap <leader>x <Plug>vem_delete_buffer-
+
+" Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>

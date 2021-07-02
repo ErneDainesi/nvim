@@ -43,6 +43,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
 	" Startify
 	Plug 'mhinz/vim-startify'
+	"telescope
+	Plug 'nvim-lua/popup.nvim'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
@@ -50,7 +54,6 @@ call plug#end()
 
 " Indent lines
 " Plug 'Yggdroot/indentLine'
-" Plug 'lukas-reineke/indent-blankline.nvim'
 
 " html close tag 
 " Plug 'alvan/vim-closetag'
