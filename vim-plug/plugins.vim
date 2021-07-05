@@ -37,16 +37,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     " colorizer
     Plug 'norcalli/nvim-colorizer.lua'
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
 	" Startify
 	Plug 'mhinz/vim-startify'
-	"telescope
+	" FZF
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'airblade/vim-rooter'
+	" Telescope
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
+	" Floatterm
+	Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
@@ -73,3 +75,5 @@ call plug#end()
 
 " Sneak
 " Plug 'justinmk/vim-sneak'
+
+
