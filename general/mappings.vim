@@ -67,3 +67,6 @@ nmap <leader>x <Plug>vem_delete_buffer-
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
+
+" BLines
+nnoremap <leader>l <cmd>BLines<cr>
