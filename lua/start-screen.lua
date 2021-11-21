@@ -10,7 +10,7 @@ vim.g.startify_custom_header = {
 vim.g.startify_files_number = 8
 
 vim.g.startify_bookmarks = {
-	{ b = "~/Documents/buena-vida-fitness-dainesi/src/App.js" },
+	{ s = "~/.config/nvim/lua/start-screen.lua" },
 	{ i = "~/.config/nvim/init.vim" },
 	{ f = "~/.config/fish/config.fish" },
 	{ x = "~/.xmonad/xmonad.hs"}
