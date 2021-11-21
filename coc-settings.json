@@ -3,6 +3,7 @@
     "css",
     "markdown",
     "javascript",
+	"typescript",
     "graphql",
     "html",
     "yaml",
@@ -15,5 +16,5 @@
     "UltiSnips",
     "~/.config/nvim/utils/snips"
   ],
-  "clangd.path": "/home/erne/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
 }
