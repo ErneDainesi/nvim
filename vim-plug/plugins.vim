@@ -49,6 +49,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'nvim-telescope/telescope.nvim'
 	" Floatterm
 	Plug 'voldikss/vim-floaterm'
+	" Tokynight
+	Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 call plug#end()
 
