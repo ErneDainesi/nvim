@@ -7,7 +7,6 @@ source $HOME/.config/nvim/plug-config/markdown.vim
 source $HOME/.config/nvim/general/status_line.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/vim-closetag.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 luafile $HOME/.config/nvim/lua/start-screen.lua
 source $HOME/.config/nvim/plug-config/floaterm.vim
