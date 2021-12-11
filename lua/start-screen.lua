@@ -13,7 +13,8 @@ vim.g.startify_bookmarks = {
 	{ s = "~/.config/nvim/lua/start-screen.lua" },
 	{ i = "~/.config/nvim/init.vim" },
 	{ f = "~/.config/fish/config.fish" },
-	{ x = "~/.xmonad/xmonad.hs"}
+	{ x = "~/.xmonad/xmonad.hs"},
+	{ p = "~/.config/polybar/config" }
 }
 
 vim.g.startify_lists = {
