@@ -19,7 +19,7 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set nonumber
+set number
 set encoding=UTF-8
 set nowrap
 set smarttab
@@ -29,3 +29,6 @@ set clipboard=unnamedplus
 set mouse=a
 set cursorline
 set hidden
+
+au BufNewFile,BufRead *.ejs set filetype=html
+" au BufNewFile,BufRead *.hbs set filetype=html
