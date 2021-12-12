@@ -13,9 +13,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+	Plug 'scrooloose/NERDTree'
     " NERDTREE syntax highlight
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     " Git support
     Plug 'Xuyuanp/nerdtree-git-plugin'
     " Show git line diff
@@ -51,6 +51,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'voldikss/vim-floaterm'
 	" Tokynight
 	Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+	" Git diff view
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'sindrets/diffview.nvim'
 
 call plug#end()
 
@@ -78,4 +81,6 @@ call plug#end()
 " Sneak
 " Plug 'justinmk/vim-sneak'
 
-
+" Nvim tree
+" Plug 'kyazdani42/nvim-web-devicons' " for file icons
+" Plug 'kyazdani42/nvim-tree.lua'
