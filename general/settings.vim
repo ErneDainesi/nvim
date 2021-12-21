@@ -29,6 +29,8 @@ set clipboard=unnamedplus
 set mouse=a
 set cursorline
 set hidden
+set fillchars+=diff:╱
+let g:python3_host_prog = '/usr/bin/python3'
 
 au BufNewFile,BufRead *.ejs set filetype=html
 " au BufNewFile,BufRead *.hbs set filetype=html
