@@ -1,3 +1,7 @@
 require "erne.options"
 require "erne.keymaps"
 require "erne.plugins"
+require "erne.colorscheme"
+require "erne.lualine"
+require "erne.toggleterm"
+require "erne.cmp"
