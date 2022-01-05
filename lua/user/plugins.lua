@@ -58,9 +58,19 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use {
+    "blackCauldron7/surround.nvim",
+    config = function()
+      require"surround".setup {mappings_style = "sandwich"}
+    end
+  }
 
   -- Colorschemes
   use 'folke/tokyonight.nvim'
+  use({
+  	"catppuccin/nvim",
+  	as = "catppuccin"
+  })
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

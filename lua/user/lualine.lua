@@ -5,14 +5,14 @@ if not status_ok then
     return
 end
 
-lualine.setup { 
+lualine.setup {
   options = {
     icons_enabled = true,
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
     always_divide_middle = true,
-    theme = 'tokyonight'
+    theme = 'catppuccin'
   },
   sections = {
     lualine_a = {'mode'},
