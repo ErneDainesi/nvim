@@ -59,6 +59,12 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use {
+    'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    run = 'cd app && yarn install',
+    cmd = 'MarkdownPreview'
+  }
+  use {
     "blackCauldron7/surround.nvim",
     config = function()
       require"surround".setup {mappings_style = "sandwich"}
