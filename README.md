@@ -1,65 +1,67 @@
-# Neovim from scratch
+# Neovim Config
 
-Each video will be associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
+This config is based off [Neovim-from-scratch](https://github.com/LunarVim/Neovim-from-scratch)  
+I just tweaked it a little and added new plugins that I needed.
 
-## Try out this config
+## Plugins used
 
-Make sure to remove or move your current `nvim` directory
+I'm using [Packer](https://github.com/wbthomason/packer.nvim) to manage my plugins.
+These are all github (or gitlab) repos, so to get better documentation for each
+plugin, please check them out!  
+You can see the full list, and how they are installed at `lua/user/plugins.lua`.
 
-**IMPORTANT** Requires [Neovim v0.6.0](https://github.com/neovim/neovim/releases/tag/v0.6.0) or [Nightly](https://github.com/neovim/neovim/releases/tag/nightly). 
-```
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-```
+### Useful plugins :wrench:
 
-Run `nvim` and wait for the plugins to be installed 
+- wbthomason/packer.nvim -- Have packer manage itself
+- nvim-lua/popup.nvim -- An implementation of the Popup API from vim in Neovim
+- nvim-lua/plenary.nvim -- Useful lua functions used ny lots of plugins
+- windwp/nvim-autopairs -- Autopairs, integrates with both cmp and treesitter
+- numToStr/Comment.nvim -- Easily comment stuff
+- kyazdani42/nvim-web-devicons -- Icons for explorer
+- kyazdani42/nvim-tree.lua
+- akinsho/bufferline.nvim
+- moll/vim-bbye
+- nvim-lualine/lualine.nvim
+- akinsho/toggleterm.nvim -- Terminal inside neovim
+- ahmedkhalf/project.nvim
+- lewis6991/impatient.nvim
+- lukas-reineke/indent-blankline.nvim
+- goolord/alpha-nvim
+- antoinemadec/FixCursorHold.nvim -- This is needed to fix lsp doc highlight
+- folke/which-key.nvim
+- iamcco/markdown-preview.nvim -- Markdown viewer
+- blackCauldron7/surround.nvim -- Surround text in characters
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
+### Colorschemes :rainbow:
+- folke/tokyonight.nvim
+- catppuccin/nvim
 
-## Get healthy
+### cmp plugins
+- hrsh7th/nvim-cmp -- The completion plugin
+- hrsh7th/cmp-buffer -- buffer completions
+- hrsh7th/cmp-path -- path completions
+- hrsh7th/cmp-cmdline -- cmdline completions
+- saadparwaiz1/cmp_luasnip -- snippet completions
+- hrsh7th/cmp-nvim-lsp
 
-Open `nvim` and enter the following:
+### snippets
+- L3MON4D3/LuaSnip --snippet engine
+- rafamadriz/friendly-snippets -- a bunch of snippets to use
 
-```
-:checkhealth
-```
+### LSP
+- neovim/nvim-lspconfig -- enable LSP
+- williamboman/nvim-lsp-installer -- simple to use language server installer
+- tamago324/nlsp-settings.nvim -- language server settings defined in json for
+- jose-elias-alvarez/null-ls.nvim -- for formatters and linters
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+### Telescope :telescope:
+- nvim-telescope/telescope.nvim
 
-So let's fix that
+### Treesitter :deciduous_tree:
+- nvim-treesitter/nvim-treesitter
+- JoosepAlviste/nvim-ts-context-commentstring
 
-First we'll fix copy/paste
+### Git
+- lewis6991/gitsigns.nvim
+- sindrets/diffview.nvim -- Diff view for git
 
-- On mac `pbcopy` should be builtin
-
-- On Ubuntu
-
-  ```
-  sudo apt install xsel
-  ```
-
-- On Arch Linux
-
-  ```
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```
-  npm i -g neovim
-  ```
----
-
-**NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
-
-> The computing scientist's main challenge is not to get confused by the complexities of his own making. 
-
-\- Edsger W. Dijkstra
