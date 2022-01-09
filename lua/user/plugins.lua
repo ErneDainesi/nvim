@@ -70,6 +70,10 @@ return packer.startup(function(use)
       require"surround".setup {mappings_style = "sandwich"}
     end
   }
+  use {
+      'sindrets/diffview.nvim',
+      requires = 'nvim-lua/plenary.nvim'
+  }
 
   -- Colorschemes
   use 'folke/tokyonight.nvim'
